@@ -78,11 +78,11 @@ def cadastro_vestibulares(request):
 def inscricao_candidatos(request):
     assert isinstance(request, HttpRequest)
     return render(
-    request,
-    'app/inscricao_candidatos.html’,
-    context_instance = RequestContext(request,
-    {
-        'title':'Inscrição de candidatos’,
-        'vestibulares': Candidatos.objects.all( ),
-        'year':datetime.now().year,})
+        request,
+        'app/inscricao_candidatos.html’,
+        context_instance = RequestContext(request,
+        {
+            'title':'Inscrição de candidatos’,
+            'Candidatos': Candidatos.objects.all( ),
+            'year':datetime.now().year,})
 )
