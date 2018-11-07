@@ -82,7 +82,7 @@ def inscricao_candidatos(request):
         'app/inscricao_candidatos.html',
         context_instance = RequestContext(request,
         {
-            'title':'Inscrição de candidatos',
-            'Candidatos': Candidatos.objects.all( ),
+            'title':'Inscricao de candidatos',
+            'nome': Candidatos.objects.all( ),
             'year':datetime.now().year,})
 )
