@@ -4,9 +4,9 @@
 <h1>Inscrição de Candidatos</h1>
 </div>
 <table class="table">
-<tr><th>Nome do candidato</th></tr>
-{% for candidato in candidatos %}
-<tr><td>{{ candidato.nome }}</td></tr>
-{% endfor %}
+    <tr><th>Nome do candidato</th><th>Vestibular</th></tr>
+        {% for candidato in candidatos %}
+          <tr><td>{{ candidato.nome }}</td><td>{{ candidato.vestibular }}</td></tr>
+        {% endfor %}
 </table>
 {% endblock %}
