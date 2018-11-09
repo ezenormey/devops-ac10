@@ -19,7 +19,6 @@ class Migration(migrations.Migration):
                 ('instituicao', models.CharField(max_length=200)),
             ],
         ),
-    ]
             name='Candidatos',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
