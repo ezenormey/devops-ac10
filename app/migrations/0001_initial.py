@@ -20,8 +20,11 @@ class Migration(migrations.Migration):
             ],
         ),
     ]
-        
-     operations = [
+    
+    dependencies = [
+    ]
+
+    operations = [
         migrations.CreateModel(
             name='Candidatos',
             fields=[
