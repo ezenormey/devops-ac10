@@ -20,3 +20,11 @@ class Migration(migrations.Migration):
             ],
         ),
     ]
+            name='Candidatos',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('nome', models.CharField(max_length=200)),
+                ('vestibular', models.CharField(max_length=50)),
+            ],
+        ),
+    ]
